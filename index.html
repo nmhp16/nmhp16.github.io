@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Prototype (HP)</title>
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    .curtain__panel--left,
+    .curtain__panel--right {
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  
+  <!-- Creating the Curtain Opening Effect -->
+<div class="curtain">
+  <div class="curtain__wrapper">
+    <input type="checkbox" checked>
+    <div class="curtain__panel curtain__panel--left">
+      <div class="curtain__content-left">Click</div>
+    </div>
+    <div class="curtain__prize">
+      <img src="My project-1.gif">
+    </div>
+    <div class="curtain__panel curtain__panel--right">
+      <div class="curtain__content-right">me!</div>
+    </div>
+  </div>
+</div>
+
+  <!-- Creating Pop Up Box -->
+  <div class="modal-bg" id="modalBg">
+    <img class="popup" src="My project-2.png" onclick="movePopup(event)">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
