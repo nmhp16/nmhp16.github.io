@@ -116,10 +116,12 @@ img {
 }
 
 .curtain__content-left {
+  font-style: italic;
   left: 250px;
 }
 
 .curtain__content-right {
+  font-style: italic;
   right: 250px;
 }
 
