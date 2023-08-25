@@ -80,6 +80,9 @@ body {
   align-items: center;
 }
 
+.curtain__prize img.hidden {
+  display: none;
+}
 
 input[type=checkbox] {
   position: absolute;
@@ -198,6 +201,7 @@ body {
   text-align: center;
   transform: rotate(-20deg);
   transform-origin: 0 0;
+  font-style: italic;
 }
 .giftbox .cover {
   width: 100%;
@@ -272,7 +276,7 @@ body {
 }
 .icons .row span {
   color: #fff;
-  text-shadow: 5px 5px 0 #ca3121;
+  text-shadow: 5px 5px 0 #b89c9e;
   font-size: 84px;
   display: inline-block;
   opacity: 0;
