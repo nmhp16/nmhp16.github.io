@@ -1,5 +1,5 @@
 // Move Pop Up 
-const maxClicks = 1; // Number of Reappearance
+const maxClicks = 5; // Number of Reappearance
 let clickCount = 0;
 let popupVisible = true;
 let prevX = 0;
