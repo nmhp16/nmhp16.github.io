@@ -1,5 +1,5 @@
 // Move Pop Up 
-const maxClicks = 7; 
+const maxClicks = 1; // Number of Reappearance
 let clickCount = 0;
 let popupVisible = true;
 let prevX = 0;
@@ -72,10 +72,11 @@ window.onload=function(){
   var merrywrap=document.getElementById("merrywrap");
   var box=merrywrap.getElementsByClassName("giftbox")[0];
   var step=1;
-  var stepMinutes=[2000,2000,1000,1000];
+  var stepMinutes = [2000, 1000, 500, 500]; // Timing in miliseconds
+
 
   function init() {
-    box.addEventListener("click", openBox, false); // Use mousedown event
+    box.addEventListener("click", openBox, false); // Use click event
   }
   
   function stepClass(step){
@@ -89,6 +90,7 @@ window.onload=function(){
     }  
     stepClass(step); 
     if(step===3){ 
+      document.querySelector('.curtain__prize img').classList.remove('hidden');
     } 
     if(step===4){ 
        return;
